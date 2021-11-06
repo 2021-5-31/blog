@@ -1,0 +1,30 @@
+@import './mixd.less';
+.showtip{
+    .center();
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 5px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,.5);
+    transform: translate(-50%,-50%) translateY(20px);
+    opacity: 0;
+    transition: 1s;
+    &-warn{
+        background:rgb(189, 180, 99);
+    }
+    &-success{
+        background: rgb(76, 170, 104);
+    }
+    &-info{
+        background: rgb(71, 157, 184);
+    }
+    &-error{
+        background: red;
+    }
+    .icondom{
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
